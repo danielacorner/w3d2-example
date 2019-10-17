@@ -1,0 +1,167 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+header {
+  /*to center text*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 20%;
+  background-color: salmon;
+  text-align: center;
+  font-size: 25px;
+}
+
+.content-container {
+  /*to center content*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 60%;
+  background-color: #006666;
+
+  /* mobile-first */
+  flex-direction: column-reverse;
+}
+
+/* only below 700px */
+@media (max-width: 700px) {
+  /* mobile: true */
+  /* override the other styles */
+  /* mobile styles */
+}
+
+/* only above 700px */
+@media (min-width: 700px) {
+  /* mobile: false */
+  /* override the other styles */
+
+  /* desktop styles */
+  .content-container {
+    flex-direction: row;
+  }
+}
+
+.sidebar {
+  padding: 120px 60px;
+  background-color: #008080;
+  text-align: center;
+}
+
+footer {
+  /*to center text*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 20%;
+  background-color: #ffc200;
+  text-align: center;
+  font-size: 25px;
+
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 10%;
+
+    font-size: 16px;
+  }
+
+  .content-container {
+    height: 80%;
+  }
+
+  footer {
+    height: 10%;
+
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  img {
+    width: 350px;
+
+    height: auto;
+  }
+}
+
+html,
+body {
+  height: 100%;
+
+  margin: 0;
+}
+
+main {
+  display: flex;
+
+  flex-direction: column;
+
+  font-family: 'Open Sans', sans-serif;
+
+  color: #ffffff;
+}
+
+header {
+  /*to center text*/
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 200px 0;
+
+  background-color: salmon;
+
+  text-align: center;
+
+  font-size: 25px;
+}
+
+.content-container {
+  display: flex;
+
+  padding: 30px;
+
+  background-color: #006666;
+}
+
+footer {
+  /*to center text*/
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 150px 0;
+
+  background-color: #ffc200;
+
+  text-align: center;
+
+  font-size: 25px;
+}
+header {
+  background: url('https://images.unsplash.com/photo-1518187135417-c9032b0d416a?ixlib=rb-0.3.5&s=97a699f97050fbcf944bafa3fb030df2&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+}
